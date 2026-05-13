@@ -46,6 +46,25 @@ _SYMBOLS: dict[str, Key] = {
     "alt": Key.alt,
     "option": Key.alt,
     "opt": Key.alt,
+    # Side-explicit modifiers (``l_`` / ``r_`` prefixes). Bare names above
+    # keep resolving to LEFT for backwards compat; prefer ``r_*`` when a
+    # Joy-Con hold rides alongside left-hand typing on the physical keyboard.
+    "l_cmd": Key.cmd,
+    "l_command": Key.cmd,
+    "r_cmd": Key.cmd_r,
+    "r_command": Key.cmd_r,
+    "l_shift": Key.shift,
+    "r_shift": Key.shift_r,
+    "l_ctrl": Key.ctrl,
+    "l_control": Key.ctrl,
+    "r_ctrl": Key.ctrl_r,
+    "r_control": Key.ctrl_r,
+    "l_alt": Key.alt,
+    "l_option": Key.alt,
+    "l_opt": Key.alt,
+    "r_alt": Key.alt_r,
+    "r_option": Key.alt_r,
+    "r_opt": Key.alt_r,
     # Navigation
     "up": Key.up,
     "down": Key.down,

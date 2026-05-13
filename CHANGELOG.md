@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **Side-explicit modifier aliases** in the key DSL. Prefix any modifier
+  with `l_` or `r_` to bind to a specific physical side: `l_cmd` /
+  `r_cmd`, `l_shift` / `r_shift`, `l_ctrl` / `r_ctrl`,
+  `l_alt` / `r_alt` (plus `l_option` / `r_option` / `l_opt` / `r_opt` /
+  `l_command` / `r_command` / `l_control` / `r_control` aliases). Bare
+  names (`cmd`, `shift`, `option`, ...) still resolve to the **left**
+  key — backwards compatible. Useful for apps that distinguish sides
+  (e.g. dictation tools triggered by Right Option, Karabiner mappings,
+  accessibility shortcuts).
+
 ## [0.2.0] — 2026-04-22
 
 ### Changed
