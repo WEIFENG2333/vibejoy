@@ -89,6 +89,8 @@ Everything lives in one TOML file. The full DSL:
 | `window_switch` | `window_switch:<a>,<b>,…` | cycle focus between apps |
 | `shell` | `shell:<command>` | run `/bin/sh -c <command>`, non-blocking |
 
+**Modifier sides.** Bare modifier names (`cmd`, `shift`, `ctrl`, `alt`, `option`) resolve to the **left** physical key. Prefix with `l_` or `r_` to pick a side — e.g. `combo:r_option+space`, `hold:r_shift`, `tap:r_cmd`. macOS apps that distinguish sides (dictation triggered by Right Option, Karabiner mappings, accessibility shortcuts) need the explicit prefix.
+
 Minimal example:
 
 ```toml

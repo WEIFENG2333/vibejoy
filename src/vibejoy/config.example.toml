@@ -18,6 +18,11 @@
 #   shell:<command>            run /bin/sh -c <command>, non-blocking;
 #                              fires on both press and release with
 #                              $VIBEJOY_EVENT=pressed|released
+#
+# Modifier sides:
+#   cmd / shift / ctrl / alt / option resolve to the LEFT physical key.
+#   Use l_* / r_* prefixes to pick a side, e.g. combo:r_option+space,
+#   hold:r_shift, tap:r_cmd — needed for apps that distinguish sides.
 
 [global]
 deadzone       = 0.2    # stick radial deadzone, 0..1
